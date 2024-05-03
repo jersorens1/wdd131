@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    background-color: #b9e0c9;
+    color: #343a40;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  nav {
+    padding: .6rem;
+    background-color: #343a40;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #b9e0c9;
+    padding: 20px;
+    font-weight: 500;
+    
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #aboutmeimg {
+    max-width: 100%;
+    height: 200px;
+    float: right;
+    border-radius: 10px;
+    padding: 5px;
+    border: solid 2px;
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: auto 40%;
+    gap: 40px;
+    margin: 30px;
+  }
+  
+  .card {
+    border: 1px solid gray;
+    border-radius: 8px;
+  }
+  
+  h2 {
+    background-color: #b9e0c9;
+    color: #343a40;
+    font-weight: 400;
+    font-size: 1.2rem;
+    padding: 10px;
+    text-align: center;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  
+  }
+  
+  section p {
+    text-align: left;
+    padding: 20px;
+    color: #333;
+  }
+  
+  .me {
+    max-width: 180px;
+    float: right;
+    padding-left: 15px;
+  }
+  
+  hr {
+    width: 60%;
+    margin: 0 auto;
+  }
+  
+  section ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  section li {
+    padding-top: 35px;
+  }
+  
+  section li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  a:hover {
+    color: #b9e0c9;
+    border: 1px solid #b9e0c9;
+    transition: 0.5s;
+    padding: 3px;
+  }
+
+footer {
+    grid-column: 1 / 4;
+    width: 100%;
+    justify-self: center;
+    background: #343a40;
+    color: #b9e0c9;
+    text-align: center;
+    padding: .3em;
+}
