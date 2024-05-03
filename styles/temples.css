@@ -7,7 +7,8 @@ header {
     display: grid;
     grid-gap: 1rem;
     padding: 15px;
-    background-color: lightblue;
+    background-color: #b9e0c9;
+    color: #343a40;
 }
 
 header h1 {
@@ -38,7 +39,7 @@ header h1 {
 
 nav {
     display: flex;
-    background-color: lightblue;
+    background-color: #b9e0c9;
     font-family: "Poppins", serif;
     font-size: 1.5em;
     flex-direction: column;
@@ -53,8 +54,11 @@ nav a {
 }
 
 nav a:hover {
-    background-color: rgb(10, 98, 128);
-    color: white;
+    color: #fff;
+    border: 1px solid #b9e0c9;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 3px;
 }
 
 .show a {
@@ -75,6 +79,7 @@ h2 {
     justify-content: center;
     margin: auto;
     font-family:"Poppins", serif;
+    color: #343a40;
     text-align:center;
     padding: 25px;
 }
@@ -94,12 +99,14 @@ figure {
 figcaption {
     justify-self: center;
     font-family: "Poppins";
+    color: #343a40;
 }
 
 footer {
     display: grid;
     justify-content: center;
-    background-color: lightblue;
+    background-color: #b9e0c9;
+    color: #343a40;
     font-family: "Poppins", serif;
     font-size: 1.2em;
     width: 100%;
