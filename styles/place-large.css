@@ -19,8 +19,8 @@
 
     .data {
         position: absolute;
-        top: 25%;
-        left: 4%;
+        top: 20%;
+        left: 5%;
         background-color: rgba(0, 0, 0, .8);
         color: var(--white);
         display: block;
@@ -43,8 +43,8 @@
 
     .weather {
         position: absolute;
-        bottom: 18%;
-        right: 3%;
+        bottom: 20%;
+        right: 5%;
         width: 250px;
         background-color: rgba(0, 0, 0, .8);
         color: var(--white);
