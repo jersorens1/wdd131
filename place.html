@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jeremy Sorensen" />
+    <meta name="description" content="WDD 131 - Country Page">
+    <title>Country Page | United States of America</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script src="scripts/place.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>United States of America</h1>
+        <div class="spacer"></div>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/MultiColored-United-States-Map.svg" media="(max-width:920px)">
+                <img src="images/the-statue-of-liberty.webp" alt="statue-of-liberty">
+            </picture>
+            <div class="small-spacer"></div>
+        </div>
+        <div class="data">
+            <h2>Data</h2>
+        <div class="data-item">
+            <p class="label">Area:</p>
+            <p class="value">3,796,742 sq mi</p>
+        </div>
+        <div class="data-item">
+            <p class="label">Population:</p>
+            <p class="value">342M</p>
+        </div>
+        <div class="data-item">
+            <p class="label">Capital:</p>
+            <p class="value">Washington D.C.</p>
+        </div>
+        <div class="data-item">
+            <p class="label">Languages:</p>
+            <p class="value">English</p>
+        </div>
+        <div class="data-item">
+            <p class="label">Currency:</p>
+            <p class="value">U.S. dollar ($)</p>
+        </div>
+        <div class="data-item">
+            <p class="label">Time Zone:</p>
+            <p class="value">UTC-4 to -10</p>
+        </div>
+        <div class="data-item">
+            <p class="label">Calling Code:</p>
+            <p class="value">+1</p>
+        </div>
+        <div class="data-item">
+            <p class="label">Interet TLD:</p>
+            <p class="value">.us</p>
+        </div>
+        <div class="data-item">
+            <p class="label">Population:</p>
+            <p class="value">342M</p>
+        </div>
+    </div>
+    <div class="weather">
+        <h2 class="weather-h2">Weather</h2>
+        <img class="weather-icon" src="images/weather_sunny-cloudy-icon.svg" alt="partly cloudy">
+        <div class="data-item">
+            <p class="label">Temperature:</p>
+            <p class="value">78&#176; F</p>
+        </div>
+        <div class="data-item">
+            <p class="label">Conditions:</p>
+            <p class="value">Partly cloudy</p>
+        </div>
+
+        <div class="data-item">
+            <p class="label">Wind:</p>
+            <p class="value">8 mph</p>
+        </div>
+        <div class="data-item">
+            <p class="label">Wind Chill:</p>
+            <p class="value"><span id="windchill"></span></p>
+        </div>
+    </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; <span id="currentyear"></span> Jeremy Sorensen 🇺🇸 Utah
+        </p>
+        <p id="lastmodified"></p>
+    </footer>
+</body>
+</html>

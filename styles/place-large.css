@@ -1,0 +1,100 @@
+:root {
+    --red: #B31942;
+    --white: #FFFFFF;
+    --blue: #0A3161;
+}
+
+@media screen and (min-width: 920px) {
+    body {
+        position: relative;
+    }
+
+    .hero {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+    }
+
+    .data {
+        position: absolute;
+        top: 25%;
+        left: 4%;
+        background-color: rgba(0, 0, 0, .8);
+        color: var(--white);
+        display: block;
+        padding-right: 40px;
+    }
+
+    .data h2 {
+        background-color: var(--white);
+        color: var(--blue);
+        text-align: left;
+        padding: 15px;
+        padding-left: 20px;
+        margin-left: -30px;
+        margin-top: -10px;
+    }
+
+    .data-item {
+        margin: -10px;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 18%;
+        right: 3%;
+        width: 250px;
+        background-color: rgba(0, 0, 0, .8);
+        color: var(--white);
+        display: block;
+        padding-right: 40px;
+        border: none;
+    }
+
+    .weather h2 {
+        background-color: var(--white);
+        color: var(--blue);
+        text-align: left;
+        padding: 15px;
+        padding-left: 20px;
+        margin-left: -30px;
+        margin-top: -10px;
+    }
+
+    .weather-h2::after {
+        content: "⛅️";
+        font-size: 2rem;
+        padding-left: 10px;
+    }
+
+    .weather-icon {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    .data {
+        position: absolute;
+        top: 20%;
+        left: 5%;
+        background-color: rgba(0, 0, 0, .8);
+        color: var(--white);
+        display: block;
+        padding-right: 40px;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 20%;
+        right: 5%;
+        width: 250px;
+        background-color: rgba(0, 0, 0, .8);
+        color: var(--white);
+        display: block;
+        padding-right: 40px;
+        border: none;
+    }
+}
