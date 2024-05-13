@@ -1,0 +1,59 @@
+:root {
+    --back: rgb(113, 28, 30 );
+    --backhd: rgb(205, 49, 54 );
+    --title: rgb(255, 255, 255);
+    --headlight: rgb(220, 220, 220);
+    --headdark: rgb(67, 67, 67 );
+    --border: rgb(113, 28, 30);
+    --borderlight: rgb(220, 220, 220);
+    --zebra: rgb(233, 232, 232);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+table {
+    margin: 10px auto;
+    border-collapse: collapse;
+}
+
+.title {
+    color: var(--title);
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--headdark);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+th, td {
+    padding: 7px 15px;
+    border: 1px solid var(--border);
+}
+
+th {
+    background-color: var(--back);
+    color: var(--headlight);
+}
+
+.column-head {
+    background-color: var(--backhd);
+    color: var(--title);
+}
+
+td {
+    text-align: center;
+    columns: var(--headdark);
+    font-weight: 700;
+}
+
+tbody td {
+    border: 1px solid var(--borderlight);
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+}
