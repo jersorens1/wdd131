@@ -1,0 +1,44 @@
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #5D5D5D;
+    color: #99C1D6;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+
+main {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    width: 100%;
+    background: #000;
+    animation: fade 10s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    justify-self: center;
+    background-color: #99C1D6;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 700;
+    padding: 1rem;
+    margin-top: 2rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
