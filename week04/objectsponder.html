@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses and sections</title>
+</head>
+<body>
+    <h1 id="courseName"></h1>
+    <h2 id="courseCode"></h2>
+    <label for="sectionNumber">Section Number</label>
+    <input id="sectionNumber" />
+    <button id="enrollStudent">Enroll Student</button>
+    <button id="dropStudent">Drop Student</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Section#</th>
+                <th>Room#</th>
+                <th>Days</th>
+                <th>Instructor</th>
+            </tr>
+        </thead>
+        <tbody id="sections"></tbody>
+    </table>
+</body>
+
+<style>
+    td {
+        text-align: center;
+    }
+</style>
+
+<script>
+    const aCourse = {
+        code: "CSE121b",
+        name: "Javascript Language",
+        sections: [
+            { sectionNum: 1, roomNum: 'STC 353', enrolled: 26, days: 'TTh', instructor: 'Bro T' },
+            { sectionNum: 2, roomNum: 'STC 347', enrolled: 28, days: 'TTh', instructor: 'Sis A' },
+            { sectionNum: 3, roomNum: 'STC 382', enrolled: 20, days: 'MW', instructor: 'Bro H' },
+            { sectionNum: 4, roomNum: 'STC 412', enrolled: 24, days: 'TF', instructor: 'Sis M' },
+        ],
+        changeEnrollment(sectionNumber, add) {
+            const secIndex = this.sections.findIndex(
+                (section) => section.sectionNum == sectionNumber
+            );
+            if (secIndex >= 0) {
+                if (add) {
+                    this.sections[secIndex].enrolled++;
+                } else {
+                    this.sections[secIndex].enrolled--;
+                }
+                renderSections(this.sections);
+            }
+        },
+    };
+
+    function setCourse(thisCourse) {
+        const cName = document.querySelector("#courseName");
+        const cCode = document.querySelector("#courseCode");
+        cName.textContent = thisCourse.name;
+        cCode.textContent = thisCourse.code;
+    }
+
+    function renderSections(sections) {
+        const sectionList = sections.map(
+            (section) => `<tr>
+                <td>${section.sectionNum}</td>
+                <td>${section.roomNum}</td>
+                <td>${section.enrolled}</td>
+                <td>${section.days}</td>
+                <td>${section.instructor}</td>
+                </tr>`
+        );
+        document.querySelector("#sections").innerHTML = sectionList.join('');
+    }
+
+    setCourse(aCourse);
+    renderSections(aCourse.sections);
+
+    document.querySelector("#enrollStudent").addEventListener("click", function () {
+        const sectionNum = document.querySelector("#sectionNumber").value;
+        aCourse.changeEnrollment(sectionNum, true);
+    });
+
+    document.querySelector("#dropStudent").addEventListener("click", function () {
+        const sectionNum = document.querySelector("#sectionNumber").value;
+        aCourse.changeEnrollment(sectionNum, false);
+    });
+
+    let esomeprazole = {'id':'mnb78932','amount':23145,'amountType':'ct','expDate':'10/01/2021'}
+    const dose = esomeprazole[0].amount[1];
+    document.querySelector("#test").textContent = dose;
+
+</script>
+</html>
