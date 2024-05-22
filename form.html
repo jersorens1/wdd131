@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jeremy Sorensen" />
+    <meta name="description" content="WDD 131 - Product Review Form" />
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+    <title>Product Review Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+    <h1>Product Review</h1>
+    </header>
+<main>
+    <form method="get" action="review.html" class="pform">
+        <div>Product Name</div>
+        <select aria-label="select"id="product-name" name="Product Name" required>
+            <option value="" selected disabled>Select a Product ...</option>
+        </select>
+        <div class="title">Overall Rating (required)</div>
+        <label class="rating-label">⭐<br /><input aria-label="input" id="1star" type="radio" name="rating" required></label>
+        <label class="rating-label">⭐⭐<br /><input aria-label="input" id="2star" type="radio" name="rating" required></label>
+        <label class="rating-label">⭐⭐⭐<br /><input aria-label="input" id="3star" type="radio" name="rating" required></label>
+        <label class="rating-label">⭐⭐⭐⭐<br /><input aria-label="input" id="4star" type="radio" name="rating" required></label>
+        <label class="rating-label">⭐⭐⭐⭐⭐<br /><input aria-label="input" id="5star" type="radio" name="rating" required></label>
+        <div id="install-date">Date of Installation</div>
+        <label><input aria-label="input" type="date" name="installation" required></label>
+        <div class="title">Which features did you find useful in this product?</div>
+        <div>(<i>Check all that apply</i>)</div>
+        <label class="checkbox-label"><input aria-label="input" type="checkbox" id="durability" name="Durability" value="yes"> Durability<br></label>
+        <label class="checkbox-label"><input aria-label="input" type="checkbox" id="ease-use" name="Ease of Use" value="yes"> Ease of Use<br></label>
+        <label class="checkbox-label"><input aria-label="input" type="checkbox" id="performance" name="Performance" value="yes"> Performance<br></label>
+        <label class="checkbox-label"><input aria-label="input" type="checkbox" id="design" name="Design" value="yes"> Design<br></label>
+        <div class="title">Written Review (<i>optional</i>)</div>
+        <textarea aria-label="text area" id="review-box" name="Written Review"></textarea>
+        <div class="title">Your Name (<i>optional</i>)</div>
+        <input aria-label="input" type="text" id="name-input" name="your name">
+        <input aria-label="input" type="submit" id="submit-button" value="Leave Your Review">
+    </form>
+</main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span>
+            Jeremy Sorensen - Utah
+        </p>
+        <p id="lastModified">
+        </p>
+    </footer>    
+</body>
+</html>

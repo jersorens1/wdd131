@@ -1,0 +1,120 @@
+body {
+    display: grid;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 380;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: #343a40;
+    color: #b9e0c9;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+#review-header {
+    font-size: 1.5rem;
+}
+
+main {
+    font-size: .85rem;
+}
+
+.pform {
+    display: block;
+    margin: 0 auto;
+    background-color: #b9e0c9;
+    padding: 1rem;
+}
+
+.pform input {
+    padding: 0;
+}
+
+.pform input:required,
+.pform select:required {
+    border-bottom: solid 4px #ff0000;
+}
+
+.pform input:required:valid,
+.pform select:required:valid {
+    border-bottom: solid 4px #00a344;
+}
+
+.rating-label {
+    float: left;
+    padding: 0 1em;
+    padding-bottom: 1.2rem;
+    text-align: center;
+}
+
+.pform input[type="checkbox"],
+.pform input[type="date"],
+.pform input[type="text"],
+.pform input[type="submit"],
+#review-box {
+    display: inline-block;  
+}
+.pform input[type="radio"],
+.pform input[type="checkbox"] {
+    padding: .75rem;
+}
+
+.pform input[type="date"],
+.pform input[type="text"],
+select,
+#review-box {
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    padding-top: 10px;
+}
+select {
+    padding: 5px;
+    text-align: left;
+}
+input[type="checkbox"] {
+   width: 16px;
+   height: 16px;
+   vertical-align: bottom;
+}
+
+.pform input[type="date"] {
+    padding: 5px 0 5px 3px;
+    text-align:left;
+}
+
+#review-box {
+    padding: 5px 2px 50px 0;
+    text-align: left;
+}
+
+.pform input[type="text"] {
+    padding: 2px 3px 3px 0;
+    text-align:left;
+}
+
+.title {
+    padding-top: 1.2rem;
+}
+
+.pform input[type="submit"]{
+    display: block;
+    margin-top: 1rem;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 1.5rem;
+    border-radius: 3px;
+    border: solid 1px black;
+}
+
+footer {
+    background-color: #343a40;
+    color: #b9e0c9;
+    font-size: .8rem;
+    text-align: center;
+    margin-top: .5rem;
+}
